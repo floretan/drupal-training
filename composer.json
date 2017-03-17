@@ -22,7 +22,20 @@
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
         "drupal/console": "~1.0",
-        "drupal/devel": "~1.0"
+        "drupal/devel": "~1.0",
+        "drupal/config_installer": "~1.0",
+        "drupal/panels": "~3.0",
+        "drupal/restui": "~1.0",
+        "drupal/media_entity": "~1.0",
+        "drupal/inline_entity_form": "~1.0",
+        "drupal/entity_browser": "~1.0",
+        "drupal/entity_embed": "1.x-dev",
+        "drupal/field_group": "~1.0",
+        "drupal/page_manager": "~1.0",
+        "drupal/elasticsearch_helper": "~1.0",
+        "drupal/migrate_upgrade": "*",
+        "drupal/migrate_plus": "*",
+        "drupal/migrate_tools": "*"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -66,6 +79,11 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/devel": {
+                "2860138: Improve instructions for installing D3.js": "https://www.drupal.org/files/issues/2860138-4.patch"
+            }
         }
     }
 }
