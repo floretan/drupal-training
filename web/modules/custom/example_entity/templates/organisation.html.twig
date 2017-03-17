@@ -1,0 +1,22 @@
+{#
+/**
+ * @file organisation.html.twig
+ * Default theme implementation to present Organisation data.
+ *
+ * This template is used when viewing Organisation pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_organisation()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('organisation') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

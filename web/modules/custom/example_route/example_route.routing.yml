@@ -1,0 +1,27 @@
+
+example_route.default_controller_page:
+  path: '/example_route/hello/{name}'
+  defaults:
+    _controller: '\Drupal\example_route\Controller\DefaultController::page'
+    _title: 'page'
+  requirements:
+    _permission: 'do stuff to organisations'
+
+example_route.default_controller_page2:
+  path: '/example_route/hello2/{node}'
+  defaults:
+    _controller: '\Drupal\example_route\Controller\DefaultController::page2'
+    _title: 'page'
+  requirements:
+    _permission: 'access content'
+
+example_route.settings_form:
+  path: '/admin/config/example_route/settings'
+  defaults:
+    _form: '\Drupal\example_route\Form\SettingsForm'
+    _title: 'SettingsForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

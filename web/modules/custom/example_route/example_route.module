@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_entity_presave().
+ */
+function example_route_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  drupal_set_message(t('Entity is of type @type', [
+    '@type' => $entity->getEntityTypeId()
+  ]));
+}
+
+
+function example_route_entity_view_alter(array &$build, Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display) {
+
+//  $block = \Drupal\block\Entity\Block::load('my_block');
+//
+//  $build['more_stuff'] = entity_view($block, 'default');
+}
+
+function example_route_entity_type_alter(array &$entity_types) {
+  /** @var $entity_types \Drupal\Core\Entity\EntityTypeInterface[] */
+  // Set the controller class for nodes to an alternate implementation of the
+  // Drupal\Core\Entity\EntityStorageInterface interface.
+  $entity_types['media']->setAccessClass('Drupal\mymodule\MyCustomNodeStorage');
+}
