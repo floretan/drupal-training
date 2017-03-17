@@ -1,0 +1,17 @@
+uuid: 1111c56d-f84c-4eca-a968-f342f58922a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+    - serialization
+    - user
+id: entity.menu_link_content
+plugin_id: 'entity:menu_link_content'
+granularity: method
+configuration:
+  GET:
+    supported_formats:
+      - json
+    supported_auth:
+      - cookie

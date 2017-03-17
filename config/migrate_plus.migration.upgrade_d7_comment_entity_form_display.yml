@@ -1,0 +1,30 @@
+uuid: cf068d3f-a920-44bd-b97f-6c727b7f2f64
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_comment_entity_form_display
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Comment field form display configuration'
+source:
+  plugin: d7_comment_type
+  constants:
+    entity_type: node
+    field_name: comment
+    form_mode: default
+    options:
+      type: comment_default
+      weight: 20
+process:
+  entity_type: constants/entity_type
+  field_name: constants/field_name
+  form_mode: constants/form_mode
+  options: constants/options
+  bundle: node_type
+destination:
+  plugin: component_entity_form_display
+migration_dependencies:
+  required:
+    - upgrade_d7_comment_field_instance
+  optional: {  }

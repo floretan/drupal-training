@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_organisation
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -19,15 +20,23 @@ content:
     weight: -10
   contact:
     weight: 5
+  field_organisation:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   language:
     weight: 0
   timezone:
     weight: 6
   user_picture:
-    type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    type: image_image
+    weight: 8
     third_party_settings: {  }
-    weight: -1
 hidden: {  }

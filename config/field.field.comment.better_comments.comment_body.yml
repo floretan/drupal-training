@@ -1,0 +1,21 @@
+uuid: 81761693-0596-47cb-a108-88beb40f341f
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.better_comments
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.better_comments.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: better_comments
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

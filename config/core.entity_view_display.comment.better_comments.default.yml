@@ -1,0 +1,23 @@
+uuid: df58a53d-b988-461f-8a43-ab71a8d6a933
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.better_comments
+    - field.field.comment.better_comments.comment_body
+  module:
+    - text
+id: comment.better_comments.default
+targetEntityType: comment
+bundle: better_comments
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

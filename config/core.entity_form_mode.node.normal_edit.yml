@@ -1,0 +1,10 @@
+uuid: 5560308e-e050-42a8-898f-96164337e7a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.normal_edit
+label: 'Normal Edit'
+targetEntityType: node
+cache: true

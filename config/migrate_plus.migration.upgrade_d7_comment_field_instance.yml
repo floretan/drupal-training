@@ -1,0 +1,33 @@
+uuid: ccfc4e8c-5a1d-41ca-ad26-cdd78fb27055
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_comment_field_instance
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Comment field instance configuration'
+source:
+  plugin: d7_comment_type
+  constants:
+    entity_type: node
+    label: Comments
+    required: true
+process:
+  entity_type: constants/entity_type
+  label: constants/label
+  required: constants/required
+  field_name: bundle
+  bundle: node_type
+  default_value/0/status: constants/required
+  settings/default_mode: default_mode
+  settings/per_page: per_page
+  settings/anonymous: anonymous
+  settings/form_location: form_location
+  settings/preview: preview
+destination:
+  plugin: 'entity:field_config'
+migration_dependencies:
+  required:
+    - upgrade_d7_comment_field
+  optional: {  }

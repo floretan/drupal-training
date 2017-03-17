@@ -1,0 +1,21 @@
+uuid: 071f75cb-e1c6-4076-a74e-c2cd08ce593b
+langcode: en
+status: true
+dependencies:
+  module:
+    - example_block
+  theme:
+    - bartik
+id: exampleblock_2
+theme: bartik
+region: sidebar_first
+weight: -4
+provider: null
+plugin: example_block
+settings:
+  id: example_block
+  label: ''
+  provider: example_block
+  label_display: visible
+  foo: baz
+visibility: {  }

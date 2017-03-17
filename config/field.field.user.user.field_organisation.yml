@@ -1,0 +1,29 @@
+uuid: b268ea08-796b-4d51-9d28-79364b320f06
+langcode: en
+status: true
+dependencies:
+  config:
+    - example_entity.organisation_type.dekanat
+    - field.storage.user.field_organisation
+  module:
+    - user
+id: user.user.field_organisation
+field_name: field_organisation
+entity_type: user
+bundle: user
+label: Organisation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:organisation'
+  handler_settings:
+    target_bundles:
+      dekanat: dekanat
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

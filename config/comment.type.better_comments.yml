@@ -1,0 +1,8 @@
+uuid: e0cd9627-e486-450d-b4cd-a97f705490f4
+langcode: en
+status: true
+dependencies: {  }
+id: better_comments
+label: 'Better comments'
+target_entity_type_id: node
+description: ''

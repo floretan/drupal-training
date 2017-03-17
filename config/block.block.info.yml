@@ -1,0 +1,25 @@
+uuid: cb6f125c-5a90-4200-b2a2-ae49da197963
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:abeb5f46-e8f1-4069-aa31-fbb1d1154152'
+  module:
+    - block_content
+  theme:
+    - example_theme
+id: info
+theme: example_theme
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:abeb5f46-e8f1-4069-aa31-fbb1d1154152'
+settings:
+  id: 'block_content:abeb5f46-e8f1-4069-aa31-fbb1d1154152'
+  label: Info
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,28 @@
+uuid: 9007aa94-dec7-4318-a863-bd614b73c7f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - example_entity.organisation_type.dekanat
+    - field.storage.organisation.field_ansprechpartner
+id: organisation.dekanat.field_ansprechpartner
+field_name: field_ansprechpartner
+entity_type: organisation
+bundle: dekanat
+label: Ansprechpartner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 67e088ec-7ae4-4f45-95cf-ec08acb08f04
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_system_image_gd
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Image quality configuration'
+source:
+  plugin: variable
+  variables:
+    - image_jpeg_quality
+process:
+  jpeg_quality: image_jpeg_quality
+destination:
+  plugin: config
+  config_name: system.image.gd
+migration_dependencies:
+  required: {  }
+  optional: {  }

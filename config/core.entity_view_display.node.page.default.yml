@@ -3,9 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment_node_page.default
     - field.field.node.page.body
+    - field.field.node.page.comment_node_page
     - node.type.page
   module:
+    - comment
     - text
     - user
 _core:
@@ -17,9 +20,17 @@ mode: default
 content:
   body:
     label: hidden
+    weight: 0
     type: text_default
-    weight: 100
     settings: {  }
+    third_party_settings: {  }
+  comment_node_page:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
     third_party_settings: {  }
   links:
     weight: 101

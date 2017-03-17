@@ -1,17 +1,17 @@
-uuid: d5db9ece-1a73-4468-afe6-6dc60628636f
+uuid: 2bf35140-b2f5-46c4-8694-89cd08a1c356
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - example_theme
 _core:
   default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
-id: bartik_powered
-theme: bartik
-region: footer_fifth
-weight: 10
+id: example_theme_powered
+theme: example_theme
+region: sidebar_first
+weight: -8
 provider: null
 plugin: system_powered_by_block
 settings:

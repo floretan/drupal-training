@@ -1,0 +1,10 @@
+uuid: c2429f26-7120-4a08-b5cd-34e8a0915a70
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.simple_edit
+label: 'Simple Edit'
+targetEntityType: node
+cache: true

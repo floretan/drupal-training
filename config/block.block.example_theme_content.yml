@@ -1,15 +1,15 @@
-uuid: e7bde500-964d-4bc5-bdcf-5d1762ff00c0
+uuid: 8d58f061-4ca1-4fc6-b2ef-cdb39c792a6c
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - example_theme
 _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: bartik_content
-theme: bartik
+id: example_theme_content
+theme: example_theme
 region: content
 weight: 0
 provider: null

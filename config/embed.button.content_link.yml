@@ -1,0 +1,24 @@
+uuid: bcfc269c-db05-4356-ae02-919ab8bbc6da
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - entity_embed
+    - node
+label: 'Content link'
+id: content_link
+type_id: entity
+type_settings:
+  entity_type: node
+  bundles:
+    - article
+  display_plugins:
+    - 'entity_reference:entity_reference_label'
+    - 'view_mode:node.small_teaser'
+    - 'view_mode:node.teaser'
+  entity_browser: ''
+  entity_browser_settings:
+    display_review: false
+icon_uuid: null

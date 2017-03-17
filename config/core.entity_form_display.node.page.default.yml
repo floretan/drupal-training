@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.comment_node_page
     - node.type.page
   module:
     - path
@@ -16,12 +17,17 @@ bundle: page
 mode: default
 content:
   body:
+    weight: -4
     type: text_textarea_with_summary
-    weight: 31
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
+    third_party_settings: {  }
+  comment:
+    type: comment_default
+    weight: 20
+    settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp
@@ -60,4 +66,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  comment_node_page: true

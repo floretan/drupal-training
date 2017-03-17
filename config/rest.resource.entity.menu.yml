@@ -1,0 +1,17 @@
+uuid: 131608a9-c62f-41a9-a941-d40a7019667f
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - system
+    - user
+id: entity.menu
+plugin_id: 'entity:menu'
+granularity: method
+configuration:
+  GET:
+    supported_formats:
+      - json
+    supported_auth:
+      - cookie

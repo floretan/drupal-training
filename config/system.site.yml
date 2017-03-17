@@ -1,11 +1,11 @@
 uuid: 759ef939-81ae-48d6-b445-dbe3bfa48e7f
-name: 'Drupal 8 Training'
+name: Site-Install
 mail: admin@example.com
 slogan: ''
 page:
-  403: ''
-  404: ''
-  front: /node
+  403: /
+  404: /
+  front: /
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

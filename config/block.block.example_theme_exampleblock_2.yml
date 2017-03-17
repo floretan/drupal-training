@@ -1,0 +1,21 @@
+uuid: a2a973ae-847c-4c23-9850-94caddf245c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - example_block
+  theme:
+    - example_theme
+id: example_theme_exampleblock_2
+theme: example_theme
+region: sidebar_first
+weight: -4
+provider: null
+plugin: example_block
+settings:
+  id: example_block
+  label: ''
+  provider: example_block
+  label_display: visible
+  foo: baz
+visibility: {  }

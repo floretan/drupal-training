@@ -1,0 +1,62 @@
+uuid: 5c4d0a34-f85c-43ca-85f3-a14b92a2a8bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+  content:
+    - 'block_content:basic:abeb5f46-e8f1-4069-aa31-fbb1d1154152'
+  module:
+    - block_content
+    - ctools
+    - panels
+id: node_view-panels_variant-0
+label: Article
+variant: panels_variant
+variant_settings:
+  blocks:
+    b6caf52c-266c-496d-83b3-568b822262b5:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: visible
+      view_mode: default
+      region: middle
+      weight: 1
+      uuid: b6caf52c-266c-496d-83b3-568b822262b5
+      context_mapping:
+        entity: node
+    95227def-4825-45d2-bef4-671126428007:
+      id: 'block_content:abeb5f46-e8f1-4069-aa31-fbb1d1154152'
+      label: Info
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: middle
+      weight: 0
+      uuid: 95227def-4825-45d2-bef4-671126428007
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 59ca7c9c-33f2-4f25-b475-abe91c361198
+  label: null
+  weight: 0
+  layout: onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-0
+  builder: standard
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

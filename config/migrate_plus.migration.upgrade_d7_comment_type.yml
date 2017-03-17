@@ -1,0 +1,23 @@
+uuid: 3bcbb18e-3aa8-4fec-ac9b-652fbafa51f6
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_comment_type
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Comment type'
+source:
+  plugin: d7_comment_type
+  constants:
+    entity_type: node
+process:
+  target_entity_type_id: constants/entity_type
+  id: bundle
+  label: label
+destination:
+  plugin: 'entity:comment_type'
+migration_dependencies:
+  required:
+    - upgrade_d7_node_type
+  optional: {  }

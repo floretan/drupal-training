@@ -1,40 +1,21 @@
-uuid: a00bfd3e-8e31-46e3-9b0f-639808c25642
+uuid: 64e6abf8-070b-46c3-94cd-de4bd0024488
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_image
     - node.type.article
-  module:
-    - image
-_core:
-  default_config_hash: tgJzhA7Swh4M_gWU5FwFe5lPxPj5rebpMbvhpdNrERs
 id: node.article.field_image
 field_name: field_image
 entity_type: node
 bundle: article
 label: Image
-description: ''
+description: 'Upload an image to go with this article.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
-  max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
-  alt_field: true
-  title_field: false
-  alt_field_required: true
-  title_field_required: false
-  default_image:
-    uuid: null
-    alt: ''
-    title: ''
-    width: null
-    height: null
-  handler: 'default:file'
+  handler: 'default:media'
   handler_settings: {  }
-field_type: image
+field_type: entity_reference
